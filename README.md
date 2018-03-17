@@ -1,21 +1,36 @@
-# APP-NETWORK-wpa_supplicant
-OS/2 port of wpa_supplicant from Jouni Malinen.
+# README #
 
-LICENSE
-===============
-* BSD/GNU GPL V2
+OS/2 port of wpa_supplicant from Jouni Malinen. See README.
 
-COMPILE TOOLS
-===============
-* 
- 
-AUTHORS
-===============
-*  Andreas Buchinger
-*  Willibald Meyer
-*  Christian Langanke
-*  Paul Smedley (Smedles)
+### What is this repository for? ###
 
-LINKS
-===============
-* https://bitbucket.org/Andi_B/os-2-wpa_supplicant/
+* Source code for OS/2 port until it makes it into official repository
+* Starting with version 2.7 from http://w1.fi/wpa_supplicant/ at 20180310
+* See here for [official repository](http://w1.fi/wpa_supplicant/)
+* See here for [current OS/2 repository (v2.2)](http://trac.netlabs.org/ports/browser/wpa_supplicant/)
+
+This is only a temporary repository. Work in progress.
+
+----------------------------------------------
+Below no real information. Place holder only.
+
+
+### How do I get set up? ###
+
+* Summary of set up
+* Configuration
+* Dependencies
+* Database configuration
+* How to run tests
+* Deployment instructions
+
+### Contribution guidelines ###
+
+* Writing tests
+* Code review
+* Other guidelines
+
+### Who do I talk to? ###
+
+* Repo owner or admin
+* Other community or team contact

@@ -1,0 +1,309 @@
+[COMPILER]
+MACRO=\n
+FILTEREXPANSION=1 1 1 1 1
+compile=concur|capture|:Compile:&Compile,wmake %n.obj
+make=concur|capture|clear|:Build:&Build,vs_make.cmd
+rebuild=concur|capture|:Rebuild:&Rebuild,wmake /A
+debug=:Debug:&Debug,wdw wpa_supplicant.exe
+execute=:Execute:E&xecute,wpa_supplicant.exe
+user1=hide|:User 1:User 1,
+user2=hide|:User 2:User 2,
+usertool_resource_editor=hide|:Resource Editor:Resource Editor,dlgedit
+workingdir=E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant
+includedirs=%(INCLUDE)
+tagfiles=
+reffile=
+[FILES]
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\.gitignore
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\README
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\README.md
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\src\Makefile
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\src\common\cli.c
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\src\common\cli.h
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\src\common\common_module_tests.c
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\src\common\ctrl_iface_common.c
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\src\common\ctrl_iface_common.h
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\src\common\defs.h
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\src\common\dhcp.h
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\src\common\dpp.c
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\src\common\dpp.h
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\src\common\eapol_common.h
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\src\common\gas.c
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\src\common\gas.h
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\src\common\gas_server.c
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\src\common\gas_server.h
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\src\common\hw_features_common.c
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\src\common\hw_features_common.h
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\src\common\ieee802_11_common.c
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\src\common\ieee802_11_common.h
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\src\common\ieee802_11_defs.h
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\src\common\ieee802_1x_defs.h
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\src\common\linux_bridge.h
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\src\common\linux_vlan.h
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\src\common\Makefile
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\src\common\privsep_commands.h
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\src\common\qca-vendor-attr.h
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\src\common\qca-vendor.h
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\src\common\sae.c
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\src\common\sae.h
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\src\common\tnc.h
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\src\common\version.h
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\src\common\wpa_common.c
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\src\common\wpa_common.h
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\src\common\wpa_ctrl.c
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\src\common\wpa_ctrl.h
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\src\common\wpa_helpers.c
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\src\common\wpa_helpers.h
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\src\drivers\driver.h
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\src\drivers\driver_common.c
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\src\drivers\driver_genmac.c
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\src\drivers\driver_hostap.c
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\src\drivers\driver_hostap.h
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\src\drivers\driver_ndis.c
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\src\drivers\driver_ndis.h
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\src\drivers\driver_ndis_.c
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\src\drivers\drivers.c
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\src\drivers\drivers.mak
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\src\drivers\packet32.c
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\src\drivers\packet32.h
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\src\l2_packet\l2_packet.h
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\src\l2_packet\l2_packet_os2.c
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\src\utils\base64.c
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\src\utils\base64.h
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\src\utils\bitfield.c
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\src\utils\bitfield.h
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\src\utils\browser-android.c
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\src\utils\browser-system.c
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\src\utils\browser-wpadebug.c
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\src\utils\browser.c
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\src\utils\browser.h
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\src\utils\build_config.h
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\src\utils\common.c
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\src\utils\common.h
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\src\utils\edit.c
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\src\utils\edit.h
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\src\utils\edit_readline.c
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\src\utils\edit_simple.c
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\src\utils\eloop.c
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\src\utils\eloop.h
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\src\utils\eloop_win.c
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\src\utils\ext_password.c
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\src\utils\ext_password.h
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\src\utils\ext_password_i.h
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\src\utils\ext_password_test.c
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\src\utils\http-utils.h
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\src\utils\http_curl.c
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\src\utils\includes.h
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\src\utils\ip_addr.c
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\src\utils\ip_addr.h
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\src\utils\list.h
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\src\utils\os.h
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\src\utils\os_internal.c
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\src\utils\os_none.c
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\src\utils\os_os2.c
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\src\utils\pcsc_funcs.c
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\src\utils\pcsc_funcs.h
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\src\utils\platform.h
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\src\utils\radiotap.c
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\src\utils\radiotap.h
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\src\utils\radiotap_iter.h
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\src\utils\state_machine.h
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\src\utils\trace.c
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\src\utils\trace.h
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\src\utils\utils_module_tests.c
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\src\utils\uuid.c
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\src\utils\uuid.h
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\src\utils\wpa_debug.c
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\src\utils\wpa_debug.h
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\src\utils\wpabuf.c
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\src\utils\wpabuf.h
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\src\utils\xml-utils.c
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\src\utils\xml-utils.h
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\src\utils\xml_libxml2.c
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\.config
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\ap.c
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\ap.h
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\autoscan.c
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\autoscan.h
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\autoscan_exponential.c
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\autoscan_periodic.c
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\bgscan.c
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\bgscan.h
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\bgscan_learn.c
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\bgscan_simple.c
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\blacklist.c
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\blacklist.h
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\bldlvl.cmd
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\bldlvl.def
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\bss.c
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\bss.h
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\config.c
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\config.h
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\config_file.c
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\config_none.c
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\config_ssid.h
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\config_winreg.c
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\ctrl_iface.c
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\ctrl_iface.h
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\ctrl_iface_named_pipe.c
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\ctrl_iface_udp.c
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\ctrl_iface_unix.c
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\dpp_supplicant.c
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\dpp_supplicant.h
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\driver_i.h
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\eap_register.c
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\eapol_test.c
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\events.c
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\gas_query.c
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\gas_query.h
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\hs20_supplicant.c
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\hs20_supplicant.h
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\ibss_rsn.c
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\ibss_rsn.h
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\interworking.c
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\interworking.h
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\libwpa_test.c
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\m.cmd
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\main.c
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\main_none.c
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\main_winmain.c
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\main_winsvc.c
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\Makefile
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\mbo.c
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\mc.cmd
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\mesh.c
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\mesh.h
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\mesh_mpm.c
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\mesh_mpm.h
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\mesh_rsn.c
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\mesh_rsn.h
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\nfc_pw_token.c
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\nmake.mak
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\notify.c
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\notify.h
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\offchannel.c
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\offchannel.h
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\op_classes.c
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\p2p_supplicant.c
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\p2p_supplicant.h
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\p2p_supplicant_sd.c
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\preauth_test.c
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\README
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\README.OS2
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\rrm.c
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\scan.c
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\scan.h
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\sme.c
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\sme.h
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\template.def
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\vs_make.cmd
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\wifi_display.c
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\wifi_display.h
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\win_if_list.c
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\wmm_ac.c
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\wmm_ac.h
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\wnm_sta.c
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\wnm_sta.h
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\wpa_cli.c
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\wpa_passphrase.c
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\wpa_priv.c
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\wpa_supplicant.c
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\wpa_supplicant.conf
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\wpa_supplicant_conf.sh
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\wpa_supplicant_i.h
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\wpas_glue.c
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\wpas_glue.h
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\wpas_kay.c
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\wpas_kay.h
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\wpas_module_tests.c
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\wps_supplicant.c
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\wps_supplicant.h
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\dbus\dbus_common.c
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\dbus\dbus_common.h
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\dbus\dbus_common_i.h
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\dbus\dbus_dict_helpers.c
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\dbus\dbus_dict_helpers.h
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\dbus\dbus_new.c
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\dbus\dbus_new.h
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\dbus\dbus_new_handlers.c
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\dbus\dbus_new_handlers.h
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\dbus\dbus_new_handlers_p2p.c
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\dbus\dbus_new_handlers_p2p.h
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\dbus\dbus_new_handlers_wps.c
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\dbus\dbus_new_helpers.c
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\dbus\dbus_new_helpers.h
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\dbus\dbus_new_introspect.c
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\dbus\dbus_old.c
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\dbus\dbus_old.h
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\dbus\dbus_old_handlers.c
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\dbus\dbus_old_handlers.h
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\dbus\dbus_old_handlers_wps.c
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\wpa_gui-qt4\addinterface.cpp
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\wpa_gui-qt4\addinterface.h
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\wpa_gui-qt4\eventhistory.cpp
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\wpa_gui-qt4\eventhistory.h
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\wpa_gui-qt4\main.cpp
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\wpa_gui-qt4\Makefile
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\wpa_gui-qt4\networkconfig.cpp
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\wpa_gui-qt4\networkconfig.h
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\wpa_gui-qt4\peers.cpp
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\wpa_gui-qt4\peers.h
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\wpa_gui-qt4\scanresults.cpp
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\wpa_gui-qt4\scanresults.h
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\wpa_gui-qt4\signalbar.cpp
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\wpa_gui-qt4\signalbar.h
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\wpa_gui-qt4\stringquery.cpp
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\wpa_gui-qt4\stringquery.h
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\wpa_gui-qt4\userdatarequest.cpp
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\wpa_gui-qt4\userdatarequest.h
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\wpa_gui-qt4\wpa_gui.pro
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\wpa_gui-qt4\wpagui.cpp
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\wpa_gui-qt4\wpagui.h
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\wpa_gui-qt4\wpamsg.h
+[ASSOCIATION]
+[STATE]
+SCREEN: 3840 1200 21 27 1877 1137 0 0 N 0 0 0 0 1588 1052
+CWD: E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant
+BUFFER: BN="P:\Util\VisualSlickEdit40\os2\vrestore.slk"
+BI: MA=1 254 1  TABS=1 9  WWS=3 IWT=0 ST=0 IN=0 BW=0 US=0 RO=0 SE=0 SN=0 BIN=0 MN=Fundamental	HM=0 MF=1
+VIEW: LN=.0 CL=1 LE=0 CX=1 CY=1 WI=5 BI=23 HT=0 HN=0 HF=0 HC=4
+BUFFER: BN="E:\_work\ports\wpa_supplicant\trunk\wpa_supplicant\.config"
+BI: MA=1 255 1  TABS=1 3  WWS=1 IWT=1 ST=0 IN=1 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=Fundamental	HM=0 MF=0
+VIEW: LN=.0 CL=1 LE=0 CX=1 CY=1 WI=5 BI=17 HT=0 HN=0 HF=0 HC=4
+BUFFER: BN="E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\README.OS2"
+BI: MA=1 80 1  TABS=1 3  WWS=3 IWT=0 ST=0 IN=2 BW=0 US=10000 RO=0 SE=1 SN=0 BIN=0 MN=os2	HM=0 MF=768
+VIEW: LN=.0 CL=1 LE=0 CX=1 CY=1 WI=5 BI=4 HT=0 HN=0 HF=0 HC=4
+BUFFER: BN="E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\vs_make.cmd"
+BI: MA=1 74 1  TABS=1 3  WWS=0 IWT=0 ST=0 IN=2 BW=0 US=10000 RO=0 SE=1 SN=0 BIN=0 MN=Rexx	HM=0 MF=288
+VIEW: LN=.0 CL=1 LE=0 CX=1 CY=1 WI=5 BI=19 HT=0 HN=0 HF=0 HC=4
+BUFFER: BN="E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\Makefile"
+BI: MA=1 250 1  TABS=1 5  WWS=3 IWT=0 ST=0 IN=2 BW=0 US=10000 RO=0 SE=1 SN=0 BIN=0 MN=mak	HM=0 MF=512
+VIEW: LN=.0 CL=1 LE=0 CX=1 CY=1 WI=5 BI=22 HT=0 HN=0 HF=0 HC=4
+BUFFER: BN="E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\README.md"
+BI: MA=1 120 1  TABS=1 5  WWS=1 IWT=1 ST=0 IN=1 BW=0 US=10000 RO=0 SE=1 SN=0 BIN=0 MN=Fundamental	HM=0 MF=768
+VIEW: LN=.0 CL=1 LE=0 CX=1 CY=1 WI=5 BI=20 HT=0 HN=0 HF=0 HC=4
+WINDOW: 67 499 1076 286 -1 -1 N  WF=0 WT=3 "System VIO,6,0,1"
+BUFFER: BN="E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\vs_make.cmd"
+VIEW: LN=.0 CL=1 LE=0 CX=7 CY=1 WI=84 BI=19 HT=0 HN=0 HF=0 HC=4
+WINDOW: 936 -2 650 927 -1 -1 N  WF=0 WT=1 "System VIO,6,0,1"
+BUFFER: BN="E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\README.OS2"
+VIEW: LN=.0 CL=1 LE=0 CX=7 CY=1 WI=82 BI=4 HT=0 HN=0 HF=0 HC=4
+WINDOW: 847 262 740 787 -1 -1 N  WF=0 WT=2 "System VIO,6,0,1"
+BUFFER: BN="E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\README.md"
+VIEW: LN=.0 CL=1 LE=0 CX=7 CY=1 WI=83 BI=20 HT=0 HN=0 HF=0 HC=4
+WINDOW: 53 -1 928 834 -1 -1 N  WF=0 WT=4 "System VIO,6,0,1"
+BUFFER: BN="E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\Makefile"
+VIEW: LN=.3687 CL=18 LE=0 CX=24 CY=26 WI=86 BI=22 HT=0 HN=0 HF=0 HC=4
+FILEHIST: 9
+E:\log\MyIP.log
+P:\UTIL\VISUALSLICKEDIT40\OS2\vrestore.slk
+E:\_work\ports\wpa_supplicant\trunk\wpa_supplicant\.config
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\src\utils\browser-android.c
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\ctrl_iface_udp.c
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\README.OS2
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\README.md
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\vs_make.cmd
+E:\_work\ports\wpa_supplicant\20180302_from_w1.fi\hostap\wpa_supplicant\Makefile
+PRINTER: 2
+PRINTER: 2
+HPPSLase,

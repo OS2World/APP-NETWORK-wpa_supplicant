@@ -1,0 +1,124 @@
+###############################################################################
+BetaTester installation intructions
+- replace installed wpa_supplicant.exe with the included one
+	When using xwlan widget wpa_supplicant is usually found in
+	\util\xworkplace\plugins\xcenter\xwlan\.
+	When using the standalone wlanstat then in .\xwlan\.
+- check if the new version is used by xwlan/wlanstat
+	right-click - properties - tab 'WPA supplicant' check version and path
+- connect to wpa protected networks and post your findings at correspondending
+	thread at os2world.com
+- you can also test wpa_supplicant with a .conf file. F.i. set up a profile
+	with no security, switch on wireless and start wpa_supplicant manually
+	(f.i. wpa_supplicant.exe -i lan1 -cwpa_supplicant.conf)
+###############################################################################
+wpa_supplicant package for xwlan/wlanstat
+------------------------------------------------------------------------------
+Author:          Jouni Malinen and contributors
+                 Ported to OS/2 - eCS by Paul Smedley & Andreas Buchinger
+Last update:     20180310
+Current status:  v2.7 (OS/2-v2beta)
+Home page:       https://bitbucket.org/Andi_B/os-2-wpa_supplicant/
+								 (http://trac.netlabs.org/ports/browser/wpa_supplicant/)
+
+wpa_supplicant was ported to OS/2 for use with xwlan/wlanstat. First port was
+made by Willibald Meyer. Maybe together with Christian Langanke the original
+author of xwlan. Later on Paul Smedley distributed different versions. Finally
+Andreas Buchinger set up the svn repository at netlabs.org with Pauls v2.2
+version and packed this build together.
+
+Prerequisite:
+-------------
+- OS/2 or eCS with 32-bit TCP/IP stack. I've tested mainly with eCS2.1DE
+- libc065.dll (yum install libc)
+- crypto10.dll, ssl10.dll (yum install openssl)
+
+
+Optional components:
+--------------------
+
+
+Installation:
+-------------
+
+
+History:
+--------
+20140910 v2.2 (eCS-v1)
+- first build from the official OS/2 - eCS repository at
+  http://trac.netlabs.org/ports/browser/wpa_supplicant
+- minor changes to build cleanly with rpm installed gcc
+- added bldlevel information and version postfix (eCS-v1)
+- added README.OS2 with build instructions
+
+
+Build:
+------
+Standard yum/rpm gcc tool chain is prefered. Change into \wpa_supplicant
+directory and run 'make wpa_supplicant'. That's all.
+
+You can also build wpa_cli.exe and wpa_passphrase.exe with 'make all'. But these
+are not needed for xwlan.
+
+Building wpa_gui needs
+1) 'make wpa_gui-qt4/Makefile' and
+2) 'make wpa_gui-qt4/lang/wpa_gui_de.qm'. You need lrelease.exe in your path
+which is usually found in %UNIXROOT%\usr\lib\qt4\bin\. After that do
+3) 'make -C wpa_gui-qt4 2>&1 | tee out.log'. This builds the QT4 gui in its
+directory with the language file. wpa_gui-qt4 is not necessary for xwlan but
+maybe helpful in some situations. Building wpa_gui gives some warnings and
+wpa_gui is not tested very much.
+
+Bldlevel information is added to exe files while linking with bldlvl.def.
+bldlvl.def is processed before linking by bldlvl.cmd. Edit Vendor Name in
+bldlvl.cmd and VERSION_STR_POSTFIX in \src\utils\common.h if you want to release
+a new package. Do NOT edit bldlvl.def manually. bldlvl.cmd will insert up to
+date information for you.
+
+
+Copyright:
+----------
+See README
+
+
+Disclaimer:
+-----------
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+"AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+This software works for me and it should work on all PC compatible hardware
+running any version of OS/2. I've tested it on eComStation 2.1 with newest
+kernel and all other official available updates (Sep. 2014).
+
+Last but not least:
+-------------------
+You can mail me if you have problems or when you have success (hopefully) with
+this software. I will try to help you if you've specific problems with my
+software. But only if you've read the readme/help files before.
+
+Doubtless you've found out, english is not my mother tongue. You can correct
+all errors in this text by yourself if you like ;-)
+
+If you speak german, conversation would be easier. So please send your comments
+in german or english. Of course you can send in any language you want, but
+don't expect an answere ;-) My Espanol, Dutch, Russian and Arab is not good
+enough for conversation. Danke, thanks, gracias, Dank u wel, Spassiva,
+Shokran...
+
+Special thanks to Paul Smedley who made the initial builds of this software.
+Thanks to Adrian Gschwend for running netlabs.org.
+
+Andreas Buchinger, andi.os2.software@gmx.net
+DO NOT MAKE THIS EMAIL ADDRESS PUBLIC.
+DO NOT SEND ME ANY SORT OF ADVERTISING OR SPAM.
+(Unwanted advertising and spam is prohibited by law in my home country.
+Doing so can be fined)
